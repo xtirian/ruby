@@ -38,4 +38,54 @@ Hello world!
 ```
 
 
+## The basics
+
+Literals is any notation that lets represent a fixed value in souce code:
+```rb
+'Hello, world!'          # string literal
+375                      # integer literal
+3.141528                 # float literal
+true                     # boolean literal
+{ 'a' => 1, 'b' => 2 }   # hash literal
+[ 1, 2, 3 ]              # array literal
+:sym                     # symbol literal
+nil                      # nil literal
+```
+
+Strings:
+
+
+```rb
+# Ex. 1: with double quotes
+"The man said, 'Hi there!'"
+
+# Ex. 2: with single quotes and escaping
+'The man said, \'Hi there!\''
+```
+
+Symbols 
+
+```rb 
+# Examples of symbols
+:name
+:a_symbol
+:"surprisingly, this is also a symbol"
+```
+Numbers
+
+```rb 
+# Example of integer literals
+1, 2, 3, 50, 10, 4345098098
+
+# Example of float literals
+1.2345, 2345.4267, 98.2234
+```
+
+Nil 
+
+```rb 
+irb :001 > puts "Hello, World!"
+Hello, World!
+=> nil
+```
 
