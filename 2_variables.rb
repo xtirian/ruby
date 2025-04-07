@@ -79,7 +79,73 @@ puts total
 # TYPES OF VARIABLES
 =begin
 There are five types of variables.
--Constants
--Variables
-Global
+- Constants
+- Global
+- Class
+- Instances
+- Local
 =end
+
+#Example of Constant declaration:
+MY_CONSTANT = 'I am available throughout your app.'
+
+#Example of Global variable declaration:
+$var = 'I am also available throughout your app.'
+
+#Example of Class variable declaration:
+@@Class = 0
+
+#Example of Instance variable declaration:
+@var = 'I am available throughout the current instance of this class.'
+
+#Example of Local variable declaration:
+var = 'I am be passed aroutn to cross scope boundaries'
+
+# ##### EXERCISES #####
+puts "Write a program called name.rb that asks the user to type in their name and then prints out a greeting message with their name included."
+puts "What is your first name?"
+first_name = gets.chomp
+puts "What is your last name?"
+puts "great, so your full name is #{first_name} #{last_name}"
+
+
+puts "Write a program called age.rb that asks a user how old they are and then tells them how old they will be in 10, 20, 30 and 40 years. Below is the output for someone 20 years old."
+
+puts "How old are you?"
+old = gets.chomp.to_i
+puts "In 10 years you will be:"
+puts age + 10
+puts "In 20 years you will be:"
+puts age + 20
+puts "In 30 years you will be:"
+puts age + 30
+puts "In 40 years you will be:"
+puts age + 40
+
+puts "Add another section onto name.rb that prints the name of the user 10 times. You must do this without explicitly writing the puts method 10 times in a row. Hint: you can use the times method to do something repeatedly."
+
+10.times do 
+  puts first_name 
+end
+
+=begin
+ Look at the following programs...
+x = 0
+3.times do
+  x += 1
+end
+puts x
+
+AND 
+
+y = 0
+3.times do
+  y += 1
+  x = y
+end
+puts x
+
+What does x print to the screen in each case? Do they both give errors? Are the errors different? Why?
+=end
+
+puts "Answer: In the first case the screen will print 3, in the second case will give error because the x are isolated in the boundaries of a scope, and the code is returning the x with puts outside of the scope"
